@@ -1,0 +1,135 @@
+.login-bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-color: #000000;
+  }
+  .login-form-container {
+    background-color: #202020;
+    height: 50vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #4f46e5;
+    border-radius: 12px;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .login-form-container {
+      width: 85%;
+    }
+  }
+  
+  .job-login-logo-img {
+    height: 50px;
+    margin:20px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .job-login-logo-img {
+      height: 30px;
+    }
+  }
+  
+  .login-label {
+    border: solid 0px;
+    width: 80%;
+    height: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom:50px;
+  }
+  
+  .login-username-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: solid 1px #64748b;
+    margin-top: 10px;
+    font-size: 18px;
+    padding-left: 12px;
+    color: #ffffff;
+    outline: none;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .login-password-container {
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-toggle-button {
+    height: 50px;
+    width: 50px;
+    background-color: #4f46e5;
+    border: solid 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor:pointer;
+  }
+  
+  .fa-eye {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .login-password-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: solid 1px #64748b;
+    font-size: 18px;
+    padding-left: 12px;
+    color: #ffffff;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .login-username-input:focus {
+    border: solid 2px #4f46e5;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .login-password-input:focus {
+    border: solid 2px #4f46e5;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .login-button {
+    background-color: #4f46e5;
+    width: 80%;
+    color: #ffffff;
+    height: 50px;
+    border-radius: 8px;
+    border: solid 0px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+    cursor:pointer;
+
+  }
+
+  .right-login-arrow{
+    margin-left: 8px;
+  }
+  
+
+  .login-error-msg{
+    color:  #ff0b37;
+  }
+

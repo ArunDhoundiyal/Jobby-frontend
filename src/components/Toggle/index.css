@@ -1,0 +1,12 @@
+
+.toggle{
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.dark-toggle{
+    font-size: 30px;
+    color: #6366f1;
+    cursor: pointer;
+}

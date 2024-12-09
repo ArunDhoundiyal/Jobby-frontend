@@ -1,0 +1,625 @@
+/* similar-job-card-container */
+
+.display-job-detail-bg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.white-display-job-detail-bg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+
+}
+
+
+.job-detail-card-back-button-container{
+    background-color: transparent;
+    margin-top: 180px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.job-detail-card-container{
+    background-color:  #202020;
+    margin-top: 180px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.white-job-detail-card-container{
+    background-color:  #ffffff;
+    margin-top: 180px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 50px;
+    border: solid 1px darkgrey;
+    
+}
+
+.job-detail-company-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.style-company-logo{
+    height: 90px;
+}
+
+.job-role-title-heading{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.white-job-role-title-heading{
+    color: #202020;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+
+.job-star-rating{
+    color:#fbbf24;
+    font-size: 20px;
+}
+
+.job-detail-rating{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.white-job-detail-rating{
+    color: #202020;
+    font-size: 20px;
+}
+
+.job-detail-jobrole-start-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+
+}
+
+.job-detail-rating-card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.job-detail-location-work-type-package-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-detail-location-job-type-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.job-detail-location-container{
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.white-job-detail-location-container{
+    color: #202020;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.job-detail-employment-type-container{
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.white-job-detail-employment-type-container{
+    color: #202020;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.job-detail-location{
+    margin-right: 8px;
+    font-size: 20px;
+}
+.job-detail-jo-bag{
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.job-detail-hr-line{
+    width: 100%;
+}
+
+.job-detail-description-heading{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.white-job-detail-description-heading{
+    color: #202020;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.job-detail-description-visit-card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.job-detail-description-visit-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.visit-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #6366f1;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.visit-logo{
+    margin-left: 8px;
+}
+
+.desciption{
+    color: #cbd5e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.white-desciption{
+    color: #202020;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.job-detail-skill-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skill-heading{
+    color: #ffffff;
+    font-size: 25px;
+}
+.white-skill-heading{
+    color: #202020;
+    font-size: 25px;
+}
+
+.job-detail-skill-showcase-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.job-detail-skill-logo-name-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.job-detail-skill-name-text{
+    margin-left: 8px;
+    font-weight: bold;
+    color: #cbd5e1;
+}
+.white-job-detail-skill-name-text{
+    margin-left: 8px;
+    font-weight: bold;
+    color: #202020;
+}
+
+.job-detail-no-skill-text{
+    color: #ffffff;
+}
+.white-job-detail-no-skill-text{
+    color: #202020;
+
+}
+
+.job-detail-life-at-company-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.life-at-company-job-detail-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.job-detail-life-at-company-heading{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.white-job-detail-life-at-company-heading{
+    color: #202020;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.job-detail-life-at-company-text{
+    color: #cbd5e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.white-job-detail-life-at-company-text{
+    color: #202020;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.style-life-at-company-img{
+    margin-left: 50px;
+    margin-top: 70px;
+    border-radius: 12px;
+}
+
+.similar-job-detail-container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    
+}
+
+.similar-job-card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 12px;
+}
+
+.white-similar-job-card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 12px;
+    border: solid 1px darkgrey;
+}
+
+.similar-job-company-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.company-logo-similar-job-img{
+    height: 75px;
+    margin-right: 10px;
+}
+
+.similar-job-title{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.similar-job-star-rating-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rating-similar-job{
+    color: #ffffff;
+    margin-left: 4px;
+}
+
+.similar-job-description-container{
+    display: flex;
+    flex-direction: column;
+}
+.similar-job-description{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+
+
+
+}
+
+.similar-job-description-content{
+    color: #cbd5e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.similar-job-location-work-type-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.similar-job-location-container{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    align-items: center;
+
+}
+
+.similar-job-work-type-container{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    align-items: center;
+
+}
+
+.similar-job-heading-container{
+    width: 90%;
+    
+}
+
+.similar-job-heading{
+    color: #ffffff;
+    text-align: left;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.white-similar-job-heading{
+    color: #202020;
+    text-align: left;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.job-detail-package-text{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.white-job-detail-package-text{
+    color: #202020;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.display-job-failure-view-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-logo{
+    color: #4f46e5;
+    font-size: 80px;
+}
+.retry-button{
+    background-color: #4f46e5;
+    border: solid 0px transparent;
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.failure-msg{
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.display-job-error-msg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.vs-error-icon{
+    font-size: 80px;
+    color: red;
+}
+
+@media screen and (max-width:1100px) {
+    .job-role-title-heading{
+        font-size: 20px;
+    }
+    .white-job-role-title-heading{
+        font-size: 20px;
+    }
+    .job-detail-location{
+        margin-right: 4px;
+        font-size: 15px;
+    }
+    .job-detail-jo-bag{
+        margin-right: 4px;
+        font-size: 15px;
+    }
+    .job-detail-description-heading{
+        font-size: 20px;
+    }
+    .white-job-detail-description-heading{
+        font-size: 20px;
+    }
+    .skill-heading{
+        font-size: 20px;
+    }
+    .white-skill-heading{
+        font-size: 20px;
+    }
+    .skill-logo{
+        height: 50px;
+    }
+    .job-detail-life-at-company-heading{
+        font-size: 20px;
+    }
+    .white-job-detail-life-at-company-heading{
+        font-size: 20px;
+    }
+    .similar-job-heading{
+        font-size: 20px;
+    }
+    .white-similar-job-heading{
+        font-size: 20px;
+    }
+    .similar-job-title{
+        font-size: 15px;
+    }
+    .similar-job-description{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    .job-detail-life-at-company-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .style-life-at-company-img{
+        margin-top: 50px;
+        border-radius: 12px;
+        height: 300px;
+    }
+    .similar-job-detail-container{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media screen and (max-width:430px) {
+    .job-role-title-heading{
+        font-size: 15px;
+    }
+    .white-job-role-title-heading{
+        font-size: 15px;
+    }
+    .job-detail-location{
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    .job-detail-jo-bag{
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    .job-detail-description-heading{
+        font-size: 15px;
+    }
+    .white-job-detail-description-heading{
+        font-size: 15px;
+    }
+    .skill-heading{
+        font-size: 15px;
+    }
+    .white-skill-heading{
+        font-size: 15px;
+    }
+    .white-job-detail-life-at-company-heading{
+        font-size: 15px;
+    }
+
+    .job-detail-life-at-company-heading{
+        font-size: 15px;
+    }
+    .similar-job-heading{
+        font-size: 15px;
+    }
+    .white-similar-job-heading{
+        font-size: 15px; 
+    }
+    .similar-job-title{
+        font-size: 15px;
+    }
+    .similar-job-description{
+        font-size: 15px;
+    }
+    .job-detail-location-container{
+        font-size: 12px;
+
+    }
+    .job-detail-employment-type-container{
+        font-size: 12px;
+    }
+    .white-job-detail-employment-type-container{
+        font-size: 12px;
+    }
+    .similar-job-location-container{
+        font-size: 12px;
+    }
+    .similar-job-work-type-container{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+   .style-company-logo{
+    height: 70px;
+   } 
+   .job-detail-card-container{
+    padding: 30px;
+}
+.white-job-detail-card-container{
+    padding: 30px;
+}
+}
+
+

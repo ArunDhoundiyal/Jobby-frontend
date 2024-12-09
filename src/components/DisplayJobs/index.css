@@ -1,0 +1,296 @@
+.display-job-container{
+    background-color: #272727;
+    width: 85%;
+    margin: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.dark-display-job-container{
+    background-color: #ffffff;
+    width: 85%;
+    margin: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: auto;
+    border: solid 1px darkgrey;
+}
+
+.company-logo-job-role-container{
+    display: flex;
+    align-items: center;
+}
+
+.company-logo{
+    height: 90px;
+    margin-right: 10px;
+
+}
+
+.job-title{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dark-job-title{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.job-rating-title-container{
+    display: flex;
+    align-items: center;
+}
+
+.job-rating-star{
+    color: #fbbf24;
+    font-size: 25px;
+}
+
+.job-rating{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dark-job-rating{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.job-location-freelance-salary-package-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.job-location-fulltime-container{
+    display: flex;
+    align-items: center;
+}
+
+.job-location-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+}
+
+.dark-job-location-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+
+
+
+.job-location{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.job-fulltime-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.dark-job-fulltime-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    margin-left: 30px;
+}
+
+
+
+.job-fulltime{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.job-package-salary{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dark-job-package-salary{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.job-description-heading{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.dark-job-description-heading{
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.job-description{
+    color: #cbd5e1;
+    font-size: 17px; 
+}
+
+.dark-job-description{
+    color: black;
+    font-size: 17px; 
+}
+
+
+
+@media screen and (max-width:500px) {
+    .company-logo{
+        height: 80px;
+        margin-right: 10px;
+    }
+    .job-title{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .dark-job-title{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+
+    .job-description-heading{
+        font-size: 17px;
+    }
+
+    .dark-job-description-heading{
+        font-size: 17px;
+    }
+    .job-description{
+        font-size: 14px;
+    }
+
+    .dark-job-description{
+        font-size: 14px; 
+    }
+
+
+    .job-location{
+        font-size: 15px;
+    }
+    .job-fulltime{
+        font-size: 15px;  
+    }
+    .job-package-salary{
+        font-size: 15px;
+    }  
+    .dark-job-package-salary{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .job-location{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    .job-fulltime{
+        margin-right: 5px;
+    }
+    .job-fulltime-container{
+        margin-left: 15px;
+    }
+    .dark-job-fulltime-container{
+        margin-left: 15px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .company-logo{
+        height: 70px;
+        margin-right: 10px;
+    }
+    .job-title{
+        font-size: 14px;
+    }
+
+    .dark-job-title{
+        font-size: 14px;
+    }
+
+
+    .job-rating-star{
+        font-size: 15px;
+    }
+    
+    .job-rating{
+        font-size: 15px;
+    }
+
+    .dark-job-rating{
+        font-size: 15px;
+    }
+
+
+    .job-location-container{
+        font-size: 12px;
+    }
+
+    .dark-job-location-container{
+        font-size: 12px;
+    }
+
+
+    .job-fulltime-container{
+        font-size: 12px;
+    }
+
+    .dark-job-fulltime-container{
+        font-size: 12px;
+    }
+    .job-package-salary{
+        font-size: 12px;
+    }
+
+    .dark-job-package-salary{
+        font-size: 12px;
+    }
+
+
+    .job-description-heading{
+        font-size: 14px;
+    }
+
+    .dark-job-description-heading{
+        font-size: 14px;
+    }
+
+    .job-description{
+        font-size: 12px;
+    }
+    .dark-job-description{
+        font-size: 12px; 
+    }
+
+
+
+}

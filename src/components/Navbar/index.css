@@ -1,0 +1,258 @@
+.navbar-jobby-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #272727;
+    align-items: center;
+    height: 100px;
+    width:100%;
+    top: 0px;
+    position: fixed;   
+}
+
+.dark-navbar-jobby-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    align-items: center;
+    height: 100px;
+    width:100%;
+    top: 0px;
+    position: fixed;  
+     
+}
+
+
+
+@media screen and (min-width:600px) {
+    .navbar-link-container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 250px;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    .small-navbar-link-container{
+        display: none;
+    }
+    .logout-button{
+        color: #ffffff;
+        background-color: #4f46e5;
+        border: solid 0px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 50px;
+        width: 120px;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+    
+    }
+    .small-logout-button{
+        display: none;
+    }
+
+    .dark-small-logout-button{
+        display: none;
+    }
+
+
+    .navbar-link{
+        font-size: 20px;
+    }
+
+    .dark-navbar-link{
+        font-size: 20px;
+        color: #6366f1;
+    }
+
+
+    .small-navbar-link{
+        display: none;
+
+    } 
+    .navbar-jobby-logo{
+        height: 50px;
+    }   
+}
+
+@media screen and (max-width:600px) {
+    .navbar-jobby-logo{
+        height: 35px;
+        margin-left: 8px;
+    }
+    .small-navbar-link-container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 250px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .navbar-link-container{
+        display: none;
+    }
+    .logout-button{
+        display: none;
+    }
+    .small-logout-button{
+        border: solid 0px;
+        color: #ffffff;
+        font-size: 35px;
+        background-color:transparent;
+        margin-right: 8px;
+    }
+
+    .dark-small-logout-button{
+        border: solid 0px;
+        color: #6366f1;
+        font-size: 35px;
+        background-color:transparent;
+        margin-right: 8px;
+    }
+
+
+    .navbar-link{
+        display: none;
+    }
+    .small-navbar-link{
+        font-size: 30px;
+
+    }
+    .dark-small-navbar-link{
+        font-size: 30px;
+        color: #6366f1;
+    }
+    
+}
+
+
+@media screen and (max-width:400px) {
+    .navbar-jobby-logo{
+        height: 35px;
+        margin-left: 8px;
+    }
+    .small-navbar-link-container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .navbar-link-container{
+        display: none;
+    }
+    .logout-button{
+        display: none;
+    }
+    .small-logout-button{
+        border: solid 0px;
+        color: #ffffff;
+        font-size: 30px;
+        background-color:transparent;
+        margin-right: 8px;
+    }
+    
+    .dark-small-logout-button{
+        border: solid 0px;
+        color: #6366f1;
+        font-size: 30px;
+        background-color:transparent;
+        margin-right: 8px;
+    }
+
+
+    .navbar-link{
+        display: none;
+    }
+    .small-navbar-link{
+        font-size: 25px;
+
+    }
+    .dark-small-navbar-link{
+        font-size: 25px;
+        color: #6366f1;
+    }
+    
+}
+
+@media screen and (max-width:300px) {
+    .navbar-jobby-logo{
+        height: 25px;
+        margin-left: 8px;
+    }
+}
+
+
+.home-link{
+    margin-right: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.job-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:250px) {
+    .navbar-jobby-logo{
+        height: 25px;
+        margin-left: 8px;
+    }
+    .small-navbar-link-container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .navbar-link-container{
+        display: none;
+    }
+    .logout-button{
+        display: none;
+    }
+    .small-logout-button{
+        border: solid 0px;
+        color: #ffffff;
+        font-size: 20px;
+        background-color:transparent;
+        margin-right: 8px;
+    }
+
+    .dark-small-logout-button{
+        border: solid 0px;
+        color: #6366f1;
+        font-size: 20px;
+        background-color:transparent;
+        margin-right: 8px;
+    }
+
+
+    .navbar-link{
+        display: none;
+    }
+    .small-navbar-link{
+        font-size: 20px;
+    }
+    .dark-small-navbar-link{
+        font-size: 20px;
+        color: #6366f1;
+    }
+    
+    
+}
+
+
