@@ -2,12 +2,11 @@ import {useContext} from 'react'
 import {ToggleContext}  from '../ToggleContext'
 import './index.css'
 import Navbar from '../Navbar'
-import { IoMdArrowRoundBack } from "react-icons/io";
 
 const NotFound = () => {
     const {toggle} = useContext(ToggleContext)
     return(
-    <div className='not-found-bg-container'>
+    <div className={toggle?'white-not-found-bg-container':'not-found-bg-container'}>
         <Navbar />
         <div>
             <img 
@@ -16,7 +15,7 @@ const NotFound = () => {
             />
         </div>
         <h1 className='not-found-heading'>Page Not Found</h1>
-        <p className='not-found-msg'>We are sorry, the page you requested could not be found.</p>
+        <p className={toggle?'whilte-not-found-msg':'not-found-msg'}>We are sorry, the page you requested could not be found.</p>
     </div>
 
 )}

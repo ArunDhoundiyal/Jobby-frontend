@@ -211,23 +211,23 @@ const DisplayJobDetail = () => {
                         <div className='similar-job-company-logo-container'>
                             <img alt='company-logo' src={companyLogoUrl} className='company-logo-similar-job-img' />
                             <div>
-                                <h1 className='similar-job-title'>{title}</h1>
+                                <h1 className={toggle ? 'white-similar-job-title':'similar-job-title'}>{title}</h1>
                                 <div className='similar-job-star-rating-container'>
                                     <MdOutlineStarPurple500 className='job-star-rating'/>
-                                    <p className='rating-similar-job'>{rating}</p>
-                                </div>
+                                    <p className={toggle ?'white-rating-similar-job':'rating-similar-job'}>{rating}</p>
+                                </div>-
                             </div>
                         </div>
                         <div className='similar-job-description-container'>
-                            <h1 className='similar-job-description'>Description</h1>
-                            <p className='similar-job-description-content'>{jobDescription}</p>
+                            <h1 className={toggle?'white-similar-job-description':'similar-job-description'}>Description</h1>
+                            <p className={toggle ? 'white-similar-job-description-content':'similar-job-description-content'}>{jobDescription}</p>
                         </div>
                         <div className='similar-job-location-work-type-container'>
-                            <div className='similar-job-location-container'>
+                            <div className={toggle ? 'white-similar-job-location-container':'similar-job-location-container'}>
                             <FaLocationDot className='job-detail-location' />
                             <p>{location}</p>
                             </div>
-                            <div className='similar-job-work-type-container'>
+                            <div className={toggle?'white-similar-job-work-type-container':'similar-job-work-type-container'}>
                             <BsFillBriefcaseFill className='job-detail-jo-bag' />
                             <p>{employmentType}</p>
                             </div>

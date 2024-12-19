@@ -1,4 +1,3 @@
-/* similar-job-card-container */
 
 .display-job-detail-bg-container{
     display: flex;
@@ -348,6 +347,11 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
+.white-similar-job-title{
+    color: #202020;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
 
 .similar-job-star-rating-container{
     display: flex;
@@ -359,6 +363,10 @@
     color: #ffffff;
     margin-left: 4px;
 }
+.white-rating-similar-job{
+    color: #202020;
+    margin-left: 4px; 
+}
 
 .similar-job-description-container{
     display: flex;
@@ -368,13 +376,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
     font-size: 20px;
-
-
-
+}
+.white-similar-job-description{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #202020;
+    font-size: 20px;
 }
 
 .similar-job-description-content{
     color: #cbd5e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.white-similar-job-description-content{
+    color: #202020;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -390,13 +405,24 @@
     flex-direction: row;
     color: #ffffff;
     align-items: center;
-
+}
+.white-similar-job-location-container{
+    display: flex;
+    flex-direction: row;
+    color: #202020;
+    align-items: center;
 }
 
 .similar-job-work-type-container{
     display: flex;
     flex-direction: row;
     color: #ffffff;
+    align-items: center;
+}
+.white-similar-job-work-type-container{
+    display: flex;
+    flex-direction: row;
+    color: #202020;
     align-items: center;
 
 }
@@ -520,7 +546,13 @@
     .similar-job-title{
         font-size: 15px;
     }
+    .white-similar-job-title{
+        font-size: 15px;
+    }
     .similar-job-description{
+        font-size: 18px;
+    }
+    .white-similar-job-description{
         font-size: 18px;
     }
 
@@ -588,9 +620,16 @@
     .similar-job-title{
         font-size: 15px;
     }
+    .white-similar-job-title{
+        font-size: 15px;
+    }
     .similar-job-description{
         font-size: 15px;
     }
+    .white-similar-job-description{
+        font-size: 15px;
+    }
+    
     .job-detail-location-container{
         font-size: 12px;
 
@@ -622,4 +661,4 @@
 }
 }
 
-
+/* similar-job-location-container */
