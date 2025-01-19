@@ -1,6 +1,5 @@
 import {useState, useEffect, useCallback, useContext} from 'react'
 import {ToggleContext}  from '../ToggleContext'
-import { v4 as uuidv4 } from 'uuid';
 import FooterPagination from '../FooterPagination'
 import Profile from '../Profile'
 import Navbar from '../Navbar'
@@ -12,7 +11,6 @@ import FilterEmploye from '../FilterEmploye'
 import Search from '../Search'
 import FilterSalaryRange from '../FilterSalaryRange'
 import { MdOutlineErrorOutline } from "react-icons/md";
-import SearchHistory from '../SearchHistory';
 import './index.css'
 const Jobs = () => {
     const {toggle} = useContext(ToggleContext)
@@ -30,67 +28,7 @@ const Jobs = () => {
     const [paginationCount, setPaginationCount] = useState(1)
     const [paginationData, setPaginationData] = useState([])
     const [totalPaginationCount, setTotalPaginationCount] = useState(0)
-    const [searchHistory, setSearchHistory] = useState([])
-    const [displaySearchHistory, setDisplaySearchHistory] = useState(false)
-    const [deleteSearchHistoryId, setDeleteSearchHistoryId] = useState(null)
 
-    const onClickBackButton = () => {
-        setDisplaySearchHistory(false)
-    }
-    useEffect(() => {
-        if (deleteSearchHistoryId) {
-            const updatedSearchHistory = searchHistory.filter(
-                eachSearchHistory => eachSearchHistory.id !== deleteSearchHistoryId
-            );
-            setSearchHistory(updatedSearchHistory);
-            localStorage.setItem('search-history', JSON.stringify(updatedSearchHistory))
-            setDeleteSearchHistoryId(null); 
-        }
-    }, [searchHistory, deleteSearchHistoryId]); 
-    
-    
-
-    const onClickSearchHistory = (searchKeyword) => {
-        setSearch(searchKeyword)
-    }
-
-    const onClickSearchField = () => {
-        if (searchHistory.length > 0){
-            setDisplaySearchHistory(true)
-        }
-        
-    }
-
-    const deleteHistory = (id) => {
-        setDeleteSearchHistoryId(id)
-    }
-
-    useEffect(()=>{
-        if (searchHistory.length > 0){
-            localStorage.setItem('search-history', JSON.stringify(searchHistory))
-        }
-    },[searchHistory])
-
-    useEffect(()=>{
-        const retrieveSearchData = localStorage.getItem('search-history')
-        if (retrieveSearchData){
-            const parseRetrieveSearchData = JSON.parse(retrieveSearchData);
-            if (Array.isArray(parseRetrieveSearchData)){
-                setSearchHistory(parseRetrieveSearchData)
-            }
-        }
-    },[])
-
-    useEffect(()=>{
-        let checkSearch = []
-        if (searchParameter){
-            checkSearch = jobData.filter(job => job.title.toLowerCase().includes(searchParameter.toLowerCase()))
-            if (checkSearch.length > 0 && !searchHistory.some(eachSearch => eachSearch.searchKeyword === searchParameter.toLowerCase())){
-                setSearchHistory(preSearchHistory => [...preSearchHistory, {id:uuidv4(), searchKeyword:searchParameter}])
-            }
-        }
-
-    },[jobData, searchParameter, searchHistory])
 
     useEffect(() => {
         const limit = 5;
@@ -246,22 +184,7 @@ const Jobs = () => {
         return (
             <div className= {toggle ? 'white-display-jobs-bg-container':'display-jobs-bg-container'}>
                 <div className={toggle ? 'light-total-jobs-search-container':'total-jobs-search-container'}>
-                <Search submitForm={submitSearchForm} onClickSearchField={onClickSearchField}  jobSearch={jobSearch}  search={search} displaySearchHistory = {displaySearchHistory} onClickBackButton={onClickBackButton} />
-                <>
-                {
-                searchHistory.length > 0 && displaySearchHistory ? 
-                (
-                <ul className={toggle ? 'light-search-history-container':'search-history-container'}>
-                    
-                    {
-                        searchHistory.map(eachSearchHistory => <SearchHistory key={eachSearchHistory.id}  eachSearchHistory={eachSearchHistory} deleteHistory={deleteHistory} onClickSearchHistory={onClickSearchHistory}  />)
-                    }
-                </ul>  
-                ) 
-                : 
-                ''
-                }                
-                </>
+                <Search submitForm={submitSearchForm}  jobSearch={jobSearch}  search={search} />
                 </div>
 
             <ul className='dispaly-jobby-job-container'>{
@@ -294,21 +217,7 @@ const Jobs = () => {
 
         <div className={toggle ? 'white-job-filter-container':'job-filter-container'}>
             <div className={toggle ? 'white-search-container' : 'search-container'}>
-                <Search submitForm={submitSearchForm} onClickSearchField={onClickSearchField}  jobSearch={jobSearch}  search={search} displaySearchHistory = {displaySearchHistory} onClickBackButton={onClickBackButton} />
-                <>
-                {
-                searchHistory.length > 0 && displaySearchHistory ? 
-                (
-                <ul className={toggle ? 'light-search-history-container':'search-history-container'}>
-                    {
-                    searchHistory.map(eachSearchHistory => <SearchHistory key={eachSearchHistory.id}  eachSearchHistory={eachSearchHistory} deleteHistory={deleteHistory} onClickSearchHistory={onClickSearchHistory}  />)
-                    }
-                </ul>
-                ) 
-                :
-                ''
-                }
-                </>
+                <Search submitForm={submitSearchForm}  jobSearch={jobSearch}  search={search} />
  
             </div>
             <Profile />
@@ -337,3 +246,6 @@ const Jobs = () => {
 
 
 export default Jobs
+
+
+
